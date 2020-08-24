@@ -3,7 +3,6 @@ im = Image.open('清华.png')  # 选择打开的图片
 
 
 def divideColor(im):
-     color_map = {}
      image = Image.new('RGBA', (im.size[0], im.size[1]), (255, 255, 255,1))
      draw = ImageDraw.Draw(image)
      for i in range(im.size[0]):
@@ -19,7 +18,7 @@ def divideColor(im):
      image.save('code1.png', 'png')  # code1是图片名称
 
 
-if __name__ == '__main__'
+if __name__ == '__main__':
      divideColor(im)
 
                  
